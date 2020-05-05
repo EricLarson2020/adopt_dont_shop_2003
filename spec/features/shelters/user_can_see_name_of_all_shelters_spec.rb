@@ -6,13 +6,13 @@ RSpec.describe "shelter index page", type: :feature do
                                address: "11111 Saviors St.",
                                city: "Haven Central",
                                state: "Colorado",
-                               zip: "90210")
+                               zip: 90210)
 
-   shelter_1 = Shelter.create(name: "Smiley's Shelter",
+   shelter_2 = Shelter.create(name: "Smiley's Shelter",
                               address: "2222 Joker St.",
                               city: "Smiley Central",
                               state: "Colorado",
-                              zip: "12180")
+                              zip: 12180)
 
    visit "/shelters"
 
