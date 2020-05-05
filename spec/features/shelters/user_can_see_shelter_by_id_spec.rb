@@ -8,7 +8,7 @@ RSpec.describe "find shelter page" do
                                state: "Colorado",
                                zip: 90210)
 
-  visit '/shelters/:id'
+  visit "/shelters/#{shelter_1.id}"
 
   expect(page).to have_content(shelter_1.name)
   expect(page).to have_content(shelter_1.address)

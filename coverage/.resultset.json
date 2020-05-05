@@ -182,6 +182,7 @@
         1,
         null,
         1,
+        1,
         null
       ],
       "/Users/ericlarson/turing/2module/adopt_dont_shop_2003/app/helpers/application_helper.rb": [
@@ -201,11 +202,11 @@
         null,
         1,
         null,
-        0,
-        0,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
         null,
         null
@@ -223,7 +224,14 @@
         1,
         null,
         1,
+        null,
         1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
         null,
         null
       ],
@@ -233,6 +241,6 @@
         null
       ]
     },
-    "timestamp": 1588709021
+    "timestamp": 1588717022
   }
 }
