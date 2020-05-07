@@ -1,0 +1,31 @@
+<h1>Shelter Names</h1>
+<ul>
+  <li><a href="/shelters/new">New Shelter</a></li>
+</ul>
+
+<ul>
+  <% @shelters.each do |shelter| %>
+  <li>
+    <h3>Shelter Name</h3>
+    <%= shelter.name %>
+  </li>
+
+  <li>
+    <h3>Shelter Address</h3>
+    <%= shelter.address %>
+  </li>
+  <li>
+    <h3>Shelter State</h3>
+    <%= shelter.state %>
+  </li>
+  <li>
+    <h3>Shelter City</h3>
+    <%= shelter.city %>
+  </li>
+  <li>
+    <h3>Shelter Zip</h3>
+    <%= shelter.zip %>
+  </li>
+
+  <% end %>
+</ul>

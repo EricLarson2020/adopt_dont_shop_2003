@@ -1,0 +1,34 @@
+<h1>New Shelter Form</h1>
+
+
+  <p>Fill in the information below:</p>
+
+
+<%= form_for(Shelter.new) do |f| %>
+  <label>
+    :name
+    <%= f.text_field(:name) %>
+  </label>
+
+  <label>
+    :address
+    <%= f.text_field(:address) %>
+  </label>
+
+  <label>
+    :city
+    <%= f.text_field(:city) %>
+  </label>
+
+  <label>
+    :state
+    <%= f.text_field(:state) %>
+  </label>
+
+  <label>
+    :zip
+    <%= f.text_field(:zip) %>
+  </label>
+
+  <%= f.submit('submit') %>
+<% end %>
