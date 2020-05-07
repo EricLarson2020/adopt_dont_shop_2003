@@ -9,7 +9,9 @@ RSpec.describe "shelter delete page", type: :feature do
                              zip: 74578)
 
   visit("/shelters/#{shelter.id}")
-  click_on('Delete Shelter')
+  expect(page).to have_content(shelter.name)
+  click_link('Delete Shelter')
+  expect(current_path).to_not have_content("/shelters/#{shelter.id}")
   expect(current_path).to have_content("/shelters")
   expect(page).not_to have_content(shelter.name)
   expect(page).not_to have_content(shelter.address)
