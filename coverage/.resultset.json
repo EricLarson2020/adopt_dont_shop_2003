@@ -192,10 +192,43 @@
         null,
         1,
         1,
+        null,
+        1,
         null
       ],
       "/Users/ericlarson/turing/2module/adopt_dont_shop_2003/app/helpers/application_helper.rb": [
         1,
+        null
+      ],
+      "/Users/ericlarson/turing/2module/adopt_dont_shop_2003/spec/features/shelters/user_can_create_a_shelter_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
         null
       ],
       "/Users/ericlarson/turing/2module/adopt_dont_shop_2003/spec/features/shelters/user_can_delete_a_shelter_spec.rb": [
@@ -298,11 +331,68 @@
         null,
         null
       ],
-      "/Users/ericlarson/turing/2module/adopt_dont_shop_2003/app/models/shelter.rb": [
+      "/Users/ericlarson/turing/2module/adopt_dont_shop_2003/spec/models/pet_spec.rb": [
         1,
+        null,
+        null,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null
+      ],
+      "/Users/ericlarson/turing/2module/adopt_dont_shop_2003/app/models/pet.rb": [
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/ericlarson/turing/2module/adopt_dont_shop_2003/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/ericlarson/turing/2module/adopt_dont_shop_2003/spec/models/shelter_spec.rb": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        null,
+        1,
+        2,
+        null,
+        null
+      ],
+      "/Users/ericlarson/turing/2module/adopt_dont_shop_2003/app/models/shelter.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/ericlarson/turing/2module/adopt_dont_shop_2003/app/controllers/pets_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/ericlarson/turing/2module/adopt_dont_shop_2003/app/controllers/application_controller.rb": [
         1,
         1,
         null
@@ -311,7 +401,6 @@
         1,
         null,
         1,
-        null,
         4,
         null,
         null,
@@ -322,13 +411,9 @@
         1,
         null,
         null,
-        null,
         1,
-        null,
         1,
-        null,
         1,
-        null,
         1,
         null,
         null,
@@ -358,13 +443,8 @@
         null,
         null,
         null
-      ],
-      "/Users/ericlarson/turing/2module/adopt_dont_shop_2003/app/controllers/application_controller.rb": [
-        1,
-        1,
-        null
       ]
     },
-    "timestamp": 1588885808
+    "timestamp": 1588899725
   }
 }
