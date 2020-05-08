@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "Shelters Pets Index Page" do
+RSpec.describe "Shelters Pets Index Page", type: :feature do
   it "Can show Shelters Pets" do
 
     shelter_1 = Shelter.create({name: "Happy Shelter",
@@ -26,7 +26,7 @@ RSpec.describe "Shelters Pets Index Page" do
      shelter_id: shelter_1.id
      })
 
-     visit "shelters/#{shelter_1.id}/pets"
+     visit "/shelters/#{shelter_1.id}/pets"
 
      expect(page).to have_content(pet_1.image)
      expect(page).to have_content(pet_1.name)
@@ -39,12 +39,3 @@ RSpec.describe "Shelters Pets Index Page" do
 
    end
  end
-
-
-# As a visitor
-# When I visit '/shelters/:shelter_id/pets'
-# Then I see each Pet that can be adopted from that Shelter with that shelter_id including the Pet's:
-# - image
-# - name
-# - approximate age
-# - sex
