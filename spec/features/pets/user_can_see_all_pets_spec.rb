@@ -15,6 +15,9 @@ RSpec.describe "Pet Index Page", type: :feature do
                             state: "California",
                             zip: 86192})
 
+
+
+
     pet_1 = Pet.create({
       image: "pet_url_1",
       name: "Sparky",
