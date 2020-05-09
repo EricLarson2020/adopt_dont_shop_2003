@@ -10,8 +10,8 @@ RSpec.describe "Shelter Index Page", type: :feature do
 
     visit "/shelters"
     click_link("Delete Shelter #{shelter.id}")
-    expect(current_path).to have_content("/shelters/#{shelter.id}/edit")
-    expect(current_path).to have_content("/shelters/#{shelter.id}")
+
+    expect(current_path).to eql("/shelters")
     expect(page).not_to have_content("Peanut Shelter")
     expect(page).not_to have_content("91999 Peanut Drive")
     expect(page).not_to have_content("Peanut Vale")
