@@ -26,7 +26,7 @@ RSpec.describe "Delete Pet Page", type: :feature do
     expect(current_path).to eql("/pets")
     expect(page).to_not have_content(pet.image)
     expect(page).to_not have_content(pet.name)
-    expect(page).to_not have_content(pet.approximate_age)
+  
 
 
   end
