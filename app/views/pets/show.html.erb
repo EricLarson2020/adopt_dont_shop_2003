@@ -1,6 +1,8 @@
 
 <h2> Pet Information <h2>
 
+<%= link_to 'Update Pet', "/pets/#{@pet.id}/edit" %>
+
   <p>Pet Image: <%= @pet.image %></p>
   <p>Pet Name: <%= @pet.name %></p>
   <p>Pet Description: <%= @pet.description %></p>
