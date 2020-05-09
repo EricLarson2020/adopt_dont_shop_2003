@@ -3,6 +3,7 @@
 
 <ul>
   <% @pets.each do |pet| %>
+  <%= link_to "Create Pet", "/shelters/#{@shelter.id}/pets/new" %>
   <li>
     <h3>Pet Image</h3>
     <%= pet.image %>
