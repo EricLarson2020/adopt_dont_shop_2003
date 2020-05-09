@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-05-09T14:46:20-06:00">2020-05-09T14:46:20-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-05-09T14:51:16-06:00">2020-05-09T14:51:16-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.11
+         1.12
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>31</b> files in total.
-    <b>271</b> relevant lines. 
-    <span class="green"><b>271</b> lines covered</span> and
+    <b>274</b> relevant lines. 
+    <span class="green"><b>274</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -63,9 +63,9 @@
       <tr>
         <td class="strong"><a href="#46aa110197e87bb39742fc1b8984362c6f105966" class="src_link" title="app/controllers/pets_controller.rb">app/controllers/pets_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>45</td>
-        <td>23</td>
-        <td>23</td>
+        <td>51</td>
+        <td>26</td>
+        <td>26</td>
         <td>0</td>
         <td>1.5</td>
       </tr>
@@ -418,8 +418,8 @@
     <h3>app/controllers/pets_controller.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>23</b> relevant lines. 
-      <span class="green"><b>23</b> lines covered</span> and
+      <b>26</b> relevant lines. 
+      <span class="green"><b>26</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -451,8 +451,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="5">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="5" data-linenumber="5">
+          <span class="hits">5</span>
           
           <code class="ruby">    @shelter_id = params[:shelter_id]</code>
         </li>
@@ -469,8 +469,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="8">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="5" data-linenumber="8">
+          <span class="hits">5</span>
           
           <code class="ruby">    @pets = Pet.all</code>
         </li>
@@ -658,7 +658,7 @@
         <li class="covered" data-hits="1" data-linenumber="39">
           <span class="hits">1</span>
           
-          <code class="ruby">  private</code>
+          <code class="ruby">  def destroy</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="40">
@@ -670,28 +670,64 @@
         <li class="covered" data-hits="1" data-linenumber="41">
           <span class="hits">1</span>
           
-          <code class="ruby">  def pet_params</code>
+          <code class="ruby">    Pet.destroy(params[:id])</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="42">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="42">
+          <span class="hits">1</span>
           
-          <code class="ruby">    defaults = {adoption_status: &#39;adoptable&#39;}</code>
+          <code class="ruby">    redirect_to &quot;/pets&quot;</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="43">
-          <span class="hits">2</span>
-          
-          <code class="ruby">    params.permit(:image, :name, :description, :approximate_age, :sex).reverse_merge(defaults)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="44">
+        <li class="never" data-hits="" data-linenumber="43">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="45">
+        <li class="never" data-hits="" data-linenumber="44">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="45">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="47">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def pet_params</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="48">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    defaults = {adoption_status: &#39;adoptable&#39;}</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="49">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    params.permit(:image, :name, :description, :approximate_age, :sex).reverse_merge(defaults)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="50">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="51">
           
           
           <code class="ruby">end</code>

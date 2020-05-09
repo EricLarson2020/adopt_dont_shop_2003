@@ -11,7 +11,7 @@ RSpec.describe "Delete Pet Page", type: :feature do
 
     pet = Pet.create({
       image: "Happy Url",
-      name: "Happy",
+      name: "Raulgh",
       approximate_age: 2,
       sex: "Male",
       shelter_id: shelter_1.id
@@ -23,12 +23,12 @@ RSpec.describe "Delete Pet Page", type: :feature do
     expect(page).to have_content(pet.approximate_age)
     expect(page).to have_content(pet.sex)
     click_link("Delete Pet")
-    expect(current_path).to eql("/pets/#{pet.id}")
+    expect(current_path).to eql("/pets")
     expect(page).to_not have_content(pet.image)
     expect(page).to_not have_content(pet.name)
     expect(page).to_not have_content(pet.approximate_age)
-    expect(page).to_not have_content(pet.sex)
-    expect(page).to_not have_content(pet.shleter_id)
+
+
   end
 
 end
