@@ -25,6 +25,7 @@ RSpec.describe "Pet's Show Page Update", type: :feature do
     fill_in :description, with: "A loyal Pet"
     fill_in :approximate_age, with: 4
     fill_in :sex, with: "Male"
+    click_on 'Update Pet'
     expect(current_path).to eql("/pets/#{pet.id}")
     expect(page).to have_content("Fido url")
     expect(page).to have_content("Fido")
