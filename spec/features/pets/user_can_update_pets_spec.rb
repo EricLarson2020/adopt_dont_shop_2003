@@ -27,11 +27,12 @@ RSpec.describe "Pet's Show Page Update", type: :feature do
     fill_in :sex, with: "Male"
     click_on 'Update Pet'
     expect(current_path).to eql("/pets/#{pet.id}")
-    expect(page).to have_content("Fido url")
-    expect(page).to have_content("Fido")
-    expect(page).to have_content("A loveable cuddley pet")
+    expect(page).to have_content("Fang url")
+    expect(page).to have_content("Fang")
+    expect(page).to have_content("A loyal Pet")
     expect(page).to have_content("Male")
     expect(page).to have_content("adoptable")
+    expect(page).to have_content(4)
     expect(page).not_to have_content("Bella")
     expect(page).not_to have_content("Bella Url")
     expect(page).not_to have_content(3)
