@@ -10,6 +10,7 @@
     <h3>Shelter Id</h3>
     <%= shelter.id %>
     <%= link_to "Update Shelter #{shelter.id}", "/shelters/#{shelter.id}/edit"%>
+    <%= link_to "Delete Shelter #{shelter.id}", "/shelters/#{shelter.id}", method: :delete %>
     </li>
   <li>
     <h3>Shelter Name</h3>
