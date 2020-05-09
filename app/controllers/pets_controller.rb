@@ -18,13 +18,17 @@ class PetsController < ApplicationController
   end
 
   def create
-    pet = Pet.create!(pet_params)
-    binding.pry
+
+    shelter = Shelter.find(params[:id])
+    pet = shelter.pets.create!(pet_params)
+
+    redirect_to "/shelters/#{shelter.id}/pets"
   end
 
   private
 
   def pet_params
-    params.permit(:image, :name, :description, :approximate_age, :sex, adoption_status: 'adoptable')
+    defaults = {adoption_status: 'adoptable'}
+    params.permit(:image, :name, :description, :approximate_age, :sex).reverse_merge(defaults)
   end
 end
