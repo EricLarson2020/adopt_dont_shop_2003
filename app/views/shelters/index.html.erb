@@ -1,40 +1,24 @@
 <h1>Shelter Names</h1>
-<ul>
 
-  <%= link_to "New Shelter", "/shelters/new" %>
-  <%= link_to "See All Pets", "/pets" %>
-  
-</ul>
+<nav class="navigation">
+  <%= link_to "New Shelter", "/shelters/new", class: "link" %>
+  <%= link_to "See All Pets", "/pets", class: "link" %>
 
-<ul>
+</nav>
+
+<body class="display">
+
   <% @shelters.each do |shelter| %>
-  <li>
-    <h3>Shelter Id</h3>
-    <%= shelter.id %>
+
+  <section class="block">
+
+
+    <strong>Shelter Name: </strong> <strong><%= link_to shelter.name, "shelters/#{shelter.id}" %></strong>
     <%= link_to "Update Shelter #{shelter.id}", "/shelters/#{shelter.id}/edit"%>
     <%= link_to "Delete Shelter #{shelter.id}", "/shelters/#{shelter.id}", method: :delete %>
-    </li>
-  <li>
-    <h3>Shelter Name</h3>
-    <%= link_to shelter.name, "shelters/#{shelter.id}" %>
-  </li>
 
-  <li>
-    <h3>Shelter Address</h3>
-    <%= shelter.address %>
-  </li>
-  <li>
-    <h3>Shelter State</h3>
-    <%= shelter.state %>
-  </li>
-  <li>
-    <h3>Shelter City</h3>
-    <%= shelter.city %>
-  </li>
-  <li>
-    <h3>Shelter Zip</h3>
-    <%= shelter.zip %>
-  </li>
+    </section>
 
   <% end %>
-</ul>
+
+</body>

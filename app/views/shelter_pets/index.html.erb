@@ -1,40 +1,37 @@
 <h1>Shelter Pets</h1>
-  <%= link_to "Create Pet", "/shelters/#{@shelter_id}/pets/new" %>
-  <%= link_to "See All Pets", "/pets" %>
-  <%= link_to "See All Shelters", "/shelters" %>
-<ul>
-  <% @pets.each do |pet| %>
 
-  <li>
-    <h3>Pet Id</h3>
-    <%= pet.id %>
-  </li>
+  <nav class="navigation">
+    <%= link_to 'Create Pet', "/shelters/#{@shelter_id}/pets/new" %>
+    <%= link_to "See All Pets", "/pets" %>
+    <%= link_to "See All Shelters", "/shelters" %>
+  </nav>
 
-  <li>
-    <h3>Pet Image</h3>
-    <%= pet.image %>
-    </li>
-  <li>
-    <h3>Pet Name</h3>
-    <%= link_to "#{pet.name}", "pets/#{pet.id}" %>
-  </li>
+  <body class="display">
+    <% @pets.each do |pet| %>
 
-  <li>
-    <h3>Pet Approximate Age</h3>
-    <%= pet.approximate_age %>
-  </li>
+    <section class="block">
 
-  <li>
-    <h3>Pet Gender</h3>
-    <%= pet.sex %>
-  </li>
 
-  <li>
-    <h3>Pet Id</h3>
-    <%= pet.id %>
-  </li>
+    <strong>Pet Id: </strong>  <%= pet.id %><br>
 
-  <%= link_to "Update Pet #{pet.id}", "/pets/#{pet.id}/edit" %>
-  <%= link_to "Delete Pet #{pet.id}", "/pets/#{pet.id}", method: :delete %>
-  <% end %>
-</ul>
+
+
+    <strong>Pet Image: </strong> <%= pet.image %><br>
+
+
+    <strong>Pet Name: </strong><%= link_to "#{pet.name}", "pets/#{pet.id}" %><br>
+
+
+    <strong>Pet Approximate Age: </strong>  <%= pet.approximate_age %><br>
+
+
+
+    <strong>Pet Gender: </strong>  <%= pet.sex %><br>
+
+
+
+    <%= link_to "Update Pet #{pet.id}", "/pets/#{pet.id}/edit" %>
+    <%= link_to "Delete Pet #{pet.id}", "/pets/#{pet.id}", method: :delete %>
+    <% end %>
+    </section>
+  </body>

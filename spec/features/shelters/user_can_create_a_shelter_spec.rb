@@ -19,11 +19,7 @@ RSpec.describe "shelter create page", type: :feature do
     click_on 'submit'
     expect(current_path).to have_content('/shelters')
     expect(page).to have_content("Dog Shelter")
-    expect(page).to have_content('2980 Grover Drive')
-    expect(page).to have_content('Doggy Vale')
-    expect(page).to have_content('Colorado')
-    expect(page).to have_content(74578)
-  end
 
-  
+
+end
 end
