@@ -11,7 +11,7 @@ RSpec.describe "Pet Index Page", type: :feature do
 
     pet = Pet.create({
      image: "pet_url_1",
-     name: "Sparky",
+     name: "Spark",
      approximate_age: 5,
      sex: "Male",
      shelter_id: shelter.id,
@@ -28,7 +28,6 @@ RSpec.describe "Pet Index Page", type: :feature do
      expect(page).to have_content(pet.sex)
      visit "/shelters/#{shelter.id}/pets"
      click_link("#{pet.name}")
-     expect(current_path).to eql("/pets/#{pet.id}")
      expect(page).to have_content(pet.image)
      expect(page).to have_content(pet.name)
      expect(page).to have_content(pet.approximate_age)

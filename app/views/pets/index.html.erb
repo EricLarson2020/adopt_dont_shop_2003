@@ -5,13 +5,12 @@
   <% @pets.each do |pet| %>
 
 
-  <li>
     <h3>Pet Image</h3>
     <p><%="Pet #{pet.id}: #{pet.image}" %></p>
     </li>
   <li>
     <h3>Pet Name</h3>
-    <p><%= "Pet #{pet.id }: #{pet.name}" %></p>
+    <%= link_to "#{pet.name}", "/pets/#{pet.id}" %>
   </li>
 
   <li>
