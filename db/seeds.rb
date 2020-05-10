@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Shelter.create(name: "Savior's Shelter",
+shelter_1 = Shelter.create(name: "Savior's Shelter",
                            address: "11111 Saviors St.",
                            city: "Haven Central",
                            state: "Colorado",
@@ -13,8 +13,16 @@ Shelter.create(name: "Savior's Shelter",
 
 
 
-Shelter.create(name: "Smiley's Shelter",
+shelter_2 = Shelter.create(name: "Smiley's Shelter",
                            address: "2222 Joker St.",
                            city: "Smiley Central",
                            state: "Colorado",
                            zip: 12180)
+
+pet_1 = Pet.create(image: "Curly Url",
+                    name: "Curly",
+                    approximate_age: 4,
+                    sex: "Male",
+                    shelter_id: shelter_1.id,
+                    description: "A Curly Pet",
+                    adoption_status: "adoptable")
