@@ -14,9 +14,11 @@ RSpec.describe "Shelters Index Page", type: :feature do
      name: "Raulgh",
      approximate_age: 27,
      sex: "Male",
-     shelter_id: shelter_1.id
+     shelter_id: shelter.id
      })
 
   visit "shelters/#{shelter.id}"
-  click_link "View Shelters Pets"
-  expect(current_path).to eql("shelters/#{shelter.id}/pets")
+  click_link("View Shelters Pets")
+  expect(current_path).to eql("/shelters/#{shelter.id}/pets")
+  end
+end
