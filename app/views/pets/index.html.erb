@@ -26,7 +26,7 @@
 
   <li>
     <h3>Pet Shelter</h3>
-    <%= "Pet #{pet.id}: #{pet.shelter.name}" %>
+    <%= link_to "#{pet.shelter.name}", "shelters/#{pet.shelter_id}" %>
   </li>
 
 
