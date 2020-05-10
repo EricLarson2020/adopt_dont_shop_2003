@@ -371,6 +371,8 @@
         1,
         1,
         null,
+        null,
+        null,
         null
       ],
       "/Users/ericlarson/turing/2module/adopt_dont_shop_2003/spec/features/pets/user_can_see_pet_by_id_spec.rb": [
@@ -696,10 +698,6 @@
         null,
         null,
         null,
-        1,
-        1,
-        1,
-        1,
         1,
         1,
         1,
@@ -1097,6 +1095,6 @@
         null
       ]
     },
-    "timestamp": 1589137422
+    "timestamp": 1589148232
   }
 }

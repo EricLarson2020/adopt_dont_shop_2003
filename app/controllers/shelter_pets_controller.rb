@@ -5,7 +5,7 @@ class ShelterPetsController < ApplicationController
     @shelter_id = params[:shelter_id]
     shelter = Shelter.find(params[:shelter_id])
     @pets = shelter.pets
-
+  
   end
 
   def new

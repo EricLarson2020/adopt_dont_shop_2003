@@ -1,6 +1,10 @@
 <h1>New Shelter Form</h1>
-<%= link_to "See All Pets", "/pets" %>
-<%= link_to "See All Shelters", "/shelters" %>
+
+  <nav class="navigation">
+<%= link_to "See All Pets", "/pets", class: "link" %>
+<%= link_to "See All Shelters", "/shelters", class: "link" %>
+  </nav>
+  <body class="display">
   <p>Fill in the information below:</p>
 
 
@@ -17,3 +21,5 @@
   <%= text_field_tag :zip %>
   <%= submit_tag 'submit' %>
   <% end %>
+
+  <body>
