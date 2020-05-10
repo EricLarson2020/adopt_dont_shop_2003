@@ -1,5 +1,5 @@
 <h1>Create a New Pet</h1>
-
+<%= link_to "See All Pets", "/pets" %>
 <%= form_tag("/shelters/#{@shelter_id}/pets", method: :post) do %>
 <%= label_tag :image %>
 <%= text_field_tag :image %>

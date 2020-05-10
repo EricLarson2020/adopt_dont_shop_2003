@@ -1,6 +1,7 @@
 
 <h2> Pet Information <h2>
 
+<%= link_to "See All Pets", "/pets" %>
 <%= link_to 'Update Pet', "/pets/#{@pet.id}/edit" %>
 <%= link_to 'Delete Pet', "/pets/#{@pet.id}", method: :delete %>
   <p>Pet Image: <%= @pet.image %></p>
