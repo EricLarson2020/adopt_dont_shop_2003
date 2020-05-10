@@ -33,6 +33,6 @@
   </li>
 
   <%= link_to "Update Pet #{pet.id}", "/pets/#{pet.id}/edit" %>
-
+  <%= link_to "Delete Pet #{pet.id}", "/pets/#{pet.id}", method: :delete %>
   <% end %>
 </ul>
