@@ -8,8 +8,7 @@ class ShelterPetsController < ApplicationController
   end
 
   def new
-
-
   end
+
 
 end
