@@ -549,6 +549,28 @@
         null,
         null
       ],
+      "/Users/ericlarson/turing/2module/adopt_dont_shop_2003/spec/features/shelters/user_can_click_shelter_name_and_go_to_show_page_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/ericlarson/turing/2module/adopt_dont_shop_2003/spec/features/shelters/user_can_create_a_shelter_spec.rb": [
         1,
         null,
@@ -865,12 +887,12 @@
         1,
         null,
         1,
-        7,
+        8,
         null,
         null,
         null,
         1,
-        5,
+        6,
         null,
         null,
         1,
@@ -910,6 +932,6 @@
         null
       ]
     },
-    "timestamp": 1589118364
+    "timestamp": 1589119067
   }
 }
