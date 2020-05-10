@@ -213,6 +213,35 @@
         1,
         null
       ],
+      "/Users/ericlarson/turing/2module/adopt_dont_shop_2003/spec/features/pets/user_can_delete_pet_from_index_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/ericlarson/turing/2module/adopt_dont_shop_2003/spec/features/pets/user_can_delete_pet_spec.rb": [
         1,
         null,
@@ -832,10 +861,10 @@
         null,
         1,
         null,
-        7,
+        8,
         null,
         null,
-        7,
+        8,
         null,
         null,
         null,
@@ -951,6 +980,6 @@
         null
       ]
     },
-    "timestamp": 1589122782
+    "timestamp": 1589124252
   }
 }
