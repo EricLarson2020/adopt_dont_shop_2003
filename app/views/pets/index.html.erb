@@ -1,10 +1,11 @@
 
 <h1>Shelter Pets</h1>
   <%= link_to "Create Pet", "/shelters/#{@shelter_id}/pets/new" %>
+  <%= link_to "See All Pets", "/pets" %>
 <ul>
   <% @pets.each do |pet| %>
 
-
+  <li>
     <h3>Pet Image</h3>
     <p><%="Pet #{pet.id}: #{pet.image}" %></p>
     </li>
