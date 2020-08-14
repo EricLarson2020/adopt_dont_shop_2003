@@ -1,4 +1,4 @@
-version: 1.0
+
 langauge: ruby
 rbenv:
 - 2.5.3
@@ -16,7 +16,6 @@ deploy:
   provider: heroku
   run: rails db:migrate
   app: frozen-springs-02860
-  edge: true
   api_key:
     secure: b9Wbl14bYOGzG2K5Gb4O9nyYk+Q1iec7icRTcZkAXjeqxNp7HBt3C
 /cYoJZFo9LNnB/jQ98nfzlji8CGjIVF1o9sb2SauGz7PmyJ9NneTD4hflOEKJxdN
