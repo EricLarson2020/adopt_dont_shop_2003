@@ -17,3 +17,4 @@ deploy:
   run: rails db:migrate
   app: frozen-springs-02860
   edge: true
+  api_key: 8ad0a12f2d84f2440787cef3c7b2aa7e8765bc4d5869a9f7250efab60245c1b22d615040d014fe38f7f4eb56939961be72edc3406aacc97a5983641bff78e068
