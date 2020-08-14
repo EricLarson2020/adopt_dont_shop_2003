@@ -16,16 +16,4 @@ deploy:
   provider: heroku
   run: rails db:migrate
   app: frozen-springs-02860
-
-#   api_key:
-#     secure: b9Wbl14bYOGzG2K5Gb4O9nyYk+Q1iec7icRTcZkAXjeqxNp7HBt3C
-# /cYoJZFo9LNnB/jQ98nfzlji8CGjIVF1o9sb2SauGz7PmyJ9NneTD4hflOEKJxdN
-# 5SlQx13DmmWgAPjssvBLVBj5YaB9qwTfUgM2EVQPwz01M168XpVCm+4jP7v/i3p1
-# 2jmiXqPffAVK6coe8Zdt60cv0J+a5eVHA3ykzDcisN4ZVKnSVm2mM8++FAOqmDVJ
-# gUvL8pQVHX1S5VbwyF14reqvGm3q6lrSewXbLR2YwtKpfWs4c0/PXuphWNkHMK5v
-# x5ELBZIhva1rgR7U0+vdie+SxmNh9ouRyNMN2YjrG0DLC6QFnJVSRaR2sRyprD0J
-# 5HTncWrtjn7ae4yFswca2KMzaZCRtfco2nwtXLoIpPHMo4cSkf8J4L1jqAvEXcpT
-# jYmEmflQz3JetGbet9IZRAL7m/6CO6/5rO3sD+0KAq1pehcY0mJGeVCeUJrK80Rv
-# UCjP84LMN3sRMyb+ok1SZPq66sf2eWbyZ6csW7f2iIxU6ABcGByUg6GX80xKxVVU
-# ZaL75XxyKi2TUAF00PwO++YborBpq7gisQdRe6/iiGR3LjV/qvpYyxjKq9d7pfMv
-# s2Vpe81ap2Q6C63/TVDkQbwMclGN3i0fUHj+zx6Tnq8G02BbzdPzOw=
+  api_key: ee425e0a-d10d-4dd9-953c-4be35ea821f8
